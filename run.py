@@ -1,3 +1,18 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+import tkinter as tk
+import requests
+import time
+
+"""
+Framework for the app. 
+"""
+canvas = tk.Tk()
+canvas.geometry("700x450")
+canvas.title("Weather App")
+
+f = ("poppins", 15, "bold")
+t = ("poppins", 35, "bold")
+
+textfield = tk.Entry(canvas, font = t)
+textfield.pack(pady = 20)
+textfield.focus()
+
